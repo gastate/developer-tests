@@ -1,0 +1,22 @@
+:host {
+    display: flex;
+    flex-flow: column;
+    align-content: space-between;
+
+    .iframe-wrapper {
+        margin: 12px;
+        flex: 1 1 auto;
+    }
+
+    iframe {
+        box-sizing: border-box;
+        display: block;
+        height: 100%;
+        width: 100%;
+        border: solid 4px #000;
+    }
+
+    .content {
+        padding: 12px;
+    }
+}

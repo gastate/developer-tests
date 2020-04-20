@@ -1,0 +1,63 @@
+.test {
+    border: solid 1px #EEE;
+    margin: 12px 0;
+    box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+}
+
+.description {
+    padding: 0 12px;
+}
+
+h3 {
+    margin: 0;
+    padding: 12px;
+}
+
+pre {
+    padding: 12px;
+    display: block;
+    margin: 0;
+    min-height: 20px;
+    background-color: #FAFAFA;
+}
+
+.fail {
+    color: #FF8880;
+}
+
+.pass {
+    color: #9EE8AA;
+}
+
+.compare-array {
+    display: flex;
+    overflow: auto;
+
+    .item {
+        flex: 0 0 auto;
+        display: inline-block;
+        overflow: auto;
+        margin: 4px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        pre.provided {
+            margin-top: 4px;
+        }
+    }
+}
+
+.compare-primitive {
+    display: flex;
+
+    pre {
+        width: 50%;
+        flex: 0 0 auto;
+        overflow: auto;
+        max-height: 100px;
+        text-align: center;
+    }
+}

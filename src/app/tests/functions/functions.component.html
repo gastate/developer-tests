@@ -1,0 +1,30 @@
+<h1>functions: {{ test }}</h1>
+<h3> tests/{{test}}/index.ts</h3>
+<ng-container *ngIf="results">
+    <div *ngFor="let test of results" class="test">
+        <h3> {{ test.function }} </h3>
+        <div class="description" [innerHTML]="test.description"></div>
+        <div *ngFor="let sample of test.samples">
+            <h4 [ngClass]="{pass: test.pass, fail:!test.pass }">{{ sample.label}}</h4>
+            <div *ngIf="sample.type =='array'" class="compare-array">
+                <div *ngFor="let result of sample.compare" [ngClass]="{pass: result.pass, fail: !result.pass }"
+                    class="item">
+                    <pre class="answer">{{ result.answer | json }}</pre>
+                    <pre class="provided">{{ result.provided | json }}</pre>
+                </div>
+            </div>
+            <div *ngIf="sample.type =='object'" class="compare-object">
+                <div *ngFor="let result of sample.compare" [ngClass]="{pass: result.pass, fail: !result.pass }"
+                    class="item">
+                    <pre class="answer">{{ result.answer | json }}</pre>
+                    <pre class="provided">{{ result.provided | json }}</pre>
+                </div>
+            </div>
+            <div *ngIf="sample.type =='primitive'" [ngClass]="{pass: sample.pass, fail: !sample.pass }"
+                class="compare-primitive">
+                <pre class="answer">{{ sample.answer }}</pre>
+                <pre class="provided">{{ sample.provided }}</pre>
+            </div>
+        </div>
+    </div>
+</ng-container>

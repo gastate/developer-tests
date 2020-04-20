@@ -1,0 +1,16 @@
+.block {
+    min-height: 10px;
+    min-width: 10px;
+}
+
+.block.red {
+    background-color: red;
+}
+
+.block.green {
+    background-color: green;
+}
+
+.block.blue {
+    background-color: blue;
+}

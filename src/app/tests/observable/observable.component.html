@@ -1,0 +1,29 @@
+<h1>Observable</h1>
+<div class="test">
+    <h3>Slow it down</h3>
+    <div class="flx">
+        <div class="l">
+            <p>Every 1 second the value is increased by 1 up to a max of 100.</p>
+            <p>Every 5 seconds the value is reduced by 1 down to a minimum of 0.</p>
+            <p>Using a pipe try to maintain the value near 50</p>
+        </div>
+        <div class="r">
+            <div class="value square">{{throttleValue}}</div>
+        </div>
+    </div>
+
+</div>
+
+<div class="test">
+    <h3>Cross the streams</h3>
+    <div class="flx">
+        <div class="l">
+            <p>Every 500ms a value is emitted in one of five random subjects </p>
+            <p>Combine the values to create a message</p>
+        </div>
+        <div class="r">
+
+            <div class="value rectangle">{{combineValue}}</div>
+        </div>
+    </div>
+</div>
