@@ -37,7 +37,7 @@ export class FunctionsComponent implements OnInit {
       };
       const f = functions[fn];
       for (let i = 0; i < samples[fn].length; i++) {
-        const sample = samples[fn][i];
+        const sample = JSON.parse(JSON.stringify(samples[fn][i]));
         const answer = answers[fn][i];
         const diff = this.valueDiff(answer, f(sample));
         result.samples.push(diff);

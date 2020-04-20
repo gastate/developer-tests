@@ -1,0 +1,56 @@
+#carousel {
+    position: relative;
+    height: 400px;
+}
+
+#actions {
+    text-align: center;
+}
+
+.box {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 4px black;
+    line-height: 300px;
+    text-align: center;
+    background-color: #FFF;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    opacity: 0;
+    margin-left: -150px;
+    transform: scale(.7);
+    transition: all 200ms;
+
+}
+
+.box.previous,
+.box.current,
+.box.next {
+    opacity: 1;
+}
+
+.box.previous {
+    margin-left: -450px;
+}
+
+.box.next {
+    margin-left: 150px;
+}
+
+.box.current {
+    transform: scale(1);
+    z-index: 1;
+
+}
+
+button {
+    padding: 14px;
+    border: solid 3px black;
+    font-size: 16px;
+    width: 300px;
+    cursor: pointer;
+}

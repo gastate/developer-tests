@@ -7,5 +7,8 @@ export default {
     },
     "event-listener": {
         "content": "<p>Create a button</p><p>Attach an event listener to the button</p>",
+    },
+    "carousel": {
+        "content": "<p>Fix the Carousel so that it loops</p>",
     }
 }
