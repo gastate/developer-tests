@@ -1,14 +1,25 @@
-
-
 :host {
     display: block;
     height: 100%;
     width: 100%;
-
 }
 
 ::ng-deep router-outlet+* {
     display: block;
     height: 100%;
     width: 100%;
+}
+
+.home {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: black;
+
+    mat-icon {
+        font-size: 42px;
+        line-height: 62px;
+        height: 62px;
+        width: 62px;
+    }
 }

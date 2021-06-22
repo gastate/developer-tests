@@ -9,6 +9,12 @@ export default {
         "content": "<p>Create a button</p><p>Attach an event listener to the button</p>",
     },
     "carousel": {
-        "content": "<p>Fix the Carousel so that it loops</p>",
+        "content": `
+        <p>Fix the Carousel so that it loops</p>
+        <p><b>Previous</b> should decrement by 1</p>
+        <p><b>Next</b> should increment by 1</p>
+        <p>If the current slide is "One" clicking <b>Previous</b> should bring up slide "Five"</p>
+        <p>If the current slide is "Five" clicking <b>Next</b> should bring up slide "One"</p>
+        `,
     }
 }
